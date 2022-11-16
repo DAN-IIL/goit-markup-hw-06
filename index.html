@@ -365,8 +365,8 @@
                 <p class="subscribe">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
                 <div class="submit-div">
                     <form class="form-sb">
-                        <label for="mail-sb" class="mail-sb">E-mail</label>
-                        <input type="email" name="e-mail" id="mail-sb" class="email">
+                        <label for="mail-sb"></label> 
+                        <input type="email" name="footer-email" id="mail-sb" class="footer-email" placeholder="E-mail">
 
                         <button type="submit" class="submit"><span class="bt-sub">Підписатися</span>
                             <svg class="telegram" width="24" height="24">
@@ -388,11 +388,30 @@
                     <use href="./images/icon.svg/symbol-defs.svg#close-modal-icon"></use>
                 </svg>
             </button>
-            <form name="stay_data">
-                <p class="data">Залиште свої дані, ми вам передзвонимо</p>
+            <form name="stay_data" class="modal-form">
+                <p class="data-text">Залиште свої дані, ми вам передзвонимо</p>
                 <div class="data-name-div">
-                    <lable class="data-name-bf" required>Ім'я</lable>
-                    <input type="text" class="data-name" required>
+                    <label for="data-name" class="data-name-bf">Ім'я</label>
+                    <input type="text" id="data-name" name="data-name" class="data-name" autocomplete="on">
+                </div>
+                <div class="data-tel-div">
+                    <label for="data-tel" class="data-tel-bf">Телефон</label>
+                    <input type="tel" name="data-tel" id="data-tel" class="data-tel" autocomplete="on">
+                </div>
+                <div class="data-tel-div">
+                    <label for="data-mail" class="data-mail-bf">Пошта</label>
+                    <input type="email" name="data-mail" id="data-mail" class="data-mail" autocomplete="on">
+                </div>
+                <div class="data-comment-div">
+                    <label for="data-comment" class="comment-bf">Коментар</label>
+                    <textarea name="data-comment" id="data-comment" rows="10" placeholder="Введіть текст" class="data-comment"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" name="accept" id="accept" class="accept">
+                    <label for="accept">Погоджуюся з розсилкою та приймаю<a class="accept-link">Умови договору</a></label>
+                </div>
+                <div class="send-div">
+                    <button type="submit" class="send">Відправити</button>
                 </div>
             </form>
         </div>
